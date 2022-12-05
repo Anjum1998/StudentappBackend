@@ -21,4 +21,9 @@ public class StudentController {
    {
        return "Welcome to my gallery";
    }
+   @GetMapping("/home")
+    public String Home()
+   {
+       return "Welcome to my home page";
+   }
 }
