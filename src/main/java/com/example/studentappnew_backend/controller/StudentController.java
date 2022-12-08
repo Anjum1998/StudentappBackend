@@ -46,7 +46,7 @@ public class StudentController {
        System.out.println(admno);
        return (List<Students>) dao.SearchStudent(s.getAdmno());
    }
-
+   @CrossOrigin(origins = "*")
    @PostMapping(path = "/delete",consumes = "application/json",produces = "application/json")
     public Map<String,String> DeleteStudent(@RequestBody Students s)
    {
